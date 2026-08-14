@@ -1,7 +1,7 @@
 {
-  "baseDirectory": "public/images/spaciofit/",
+  "baseDirectory": "images/spaciofit/",
   "codexExpectedFormat": "PNG",
-  "note": "Los PNG mantienen exactamente las rutas indicadas en el prompt de Codex. Los WebP son alternativas optimizadas y no deben sustituirse en el markup salvo que se actualicen las extensiones.",
+  "note": "Proyecto HTML estático sin framework: los assets viven directamente en images/spaciofit/ para que las URLs /images/spaciofit/... funcionen tanto localmente como en Vercel sin symlinks ni rewrites.",
   "globalDisclosure": "Imágenes ilustrativas utilizadas para esta demo.",
   "assets": [
     {
