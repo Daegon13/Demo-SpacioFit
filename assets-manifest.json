@@ -1,0 +1,68 @@
+{
+  "baseDirectory": "public/images/spaciofit/",
+  "codexExpectedFormat": "PNG",
+  "note": "Los PNG mantienen exactamente las rutas indicadas en el prompt de Codex. Los WebP son alternativas optimizadas y no deben sustituirse en el markup salvo que se actualicen las extensiones.",
+  "globalDisclosure": "Imágenes ilustrativas utilizadas para esta demo.",
+  "assets": [
+    {
+      "role": "Hero principal",
+      "png": "/images/spaciofit/hero-facial-treatment.png",
+      "webp": "/images/spaciofit/hero-facial-treatment.webp",
+      "alt": "Tratamiento facial en un espacio de bienestar, imagen ilustrativa.",
+      "loading": "eager / high priority",
+      "objectPosition": "center center",
+      "width": 1122,
+      "height": 1402
+    },
+    {
+      "role": "Cuidado facial / imagen secundaria del hero",
+      "png": "/images/spaciofit/facial-care-closeup.png",
+      "webp": "/images/spaciofit/facial-care-closeup.webp",
+      "alt": "Detalle de un tratamiento de cuidado facial, imagen ilustrativa.",
+      "loading": "lazy salvo si aparece dentro del hero",
+      "objectPosition": "center center",
+      "width": 1122,
+      "height": 1402
+    },
+    {
+      "role": "Modelado corporal",
+      "png": "/images/spaciofit/body-modeling-treatment.png",
+      "webp": "/images/spaciofit/body-modeling-treatment.webp",
+      "alt": "Tratamiento estético corporal con equipo de aplicación manual, imagen ilustrativa.",
+      "loading": "lazy",
+      "objectPosition": "center center",
+      "width": 1122,
+      "height": 1402
+    },
+    {
+      "role": "Depilación definitiva",
+      "png": "/images/spaciofit/laser-hair-removal.png",
+      "webp": "/images/spaciofit/laser-hair-removal.webp",
+      "alt": "Sesión de depilación con tecnología de luz en un espacio de estética, imagen ilustrativa.",
+      "loading": "lazy",
+      "objectPosition": "center center",
+      "width": 1122,
+      "height": 1402
+    },
+    {
+      "role": "Relajación y masajes / CTA final",
+      "png": "/images/spaciofit/relaxation-massage.png",
+      "webp": "/images/spaciofit/relaxation-massage.webp",
+      "alt": "Masaje de relajación en un ambiente de bienestar, imagen ilustrativa.",
+      "loading": "lazy",
+      "objectPosition": "center center",
+      "width": 1122,
+      "height": 1402
+    },
+    {
+      "role": "Todo en un mismo lugar",
+      "png": "/images/spaciofit/wellness-interior.png",
+      "webp": "/images/spaciofit/wellness-interior.webp",
+      "alt": "Interior contemporáneo de estética y bienestar, imagen ambiental ilustrativa.",
+      "loading": "lazy",
+      "objectPosition": "center center",
+      "width": 1448,
+      "height": 1086
+    }
+  ]
+}
