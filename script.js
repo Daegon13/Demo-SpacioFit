@@ -28,6 +28,8 @@
 
   // Google Reviews: solo datos reales configurados. No se generan testimonios.
   const reviews = config.googleReviews || {};
+  const reviewsSection = document.querySelector("[data-reviews-section]");
+  if (!reviews.enabled && reviewsSection) reviewsSection.hidden = true;
   if (reviews.enabled) {
     const rating = document.getElementById("reviewRating");
     const count = document.getElementById("reviewCount");
@@ -50,7 +52,7 @@
   document.querySelectorAll(".service-pill").forEach(pill => {
     pill.addEventListener("click", () => {
       pill.classList.toggle("is-active");
-      track("service_interest", { service: pill.textContent.trim().replace("↗", "").trim() });
+      track("service_interest", { service: pill.textContent.trim() });
     });
   });
 

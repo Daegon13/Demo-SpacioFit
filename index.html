@@ -17,7 +17,10 @@
   <meta property="og:description" content="Elegí tu tratamiento, consultá disponibilidad y reservá online." />
   <meta property="og:type" content="website" />
 
-  <link rel="preload" as="image" href="/images/spaciofit/hero-facial-treatment.png" fetchpriority="high" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" />
+  <link rel="preload" as="image" href="/images/spaciofit/hero-facial-treatment.webp" type="image/webp" fetchpriority="high" />
   <link rel="stylesheet" href="./styles.css" />
   <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
 </head>
@@ -83,11 +86,11 @@
 
           <div class="hero__meta reveal reveal--delay-4">
             <div>
-              <span class="meta-icon" aria-hidden="true">⌁</span>
-              <span><strong>Reserva online</strong><small>La agenda se completa en Agenxu</small></span>
+              <svg class="meta-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>
+              <span><strong>Reserva online</strong><small>Consultá días y horarios</small></span>
             </div>
             <div>
-              <span class="meta-icon" aria-hidden="true">⌖</span>
+              <svg class="meta-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
               <span><strong>Montevideo</strong><small>Av. Luis Alberto de Herrera 4131</small></span>
             </div>
           </div>
@@ -95,6 +98,8 @@
 
         <div class="hero__visual reveal reveal--delay-2" aria-label="Ambiente de bienestar, imagen ilustrativa">
           <div class="hero__photo hero__photo--main">
+            <picture>
+              <source srcset="/images/spaciofit/hero-facial-treatment.webp" type="image/webp" />
             <img
               src="/images/spaciofit/hero-facial-treatment.png"
               alt="Tratamiento facial en un espacio de bienestar, imagen ilustrativa"
@@ -104,21 +109,10 @@
               fetchpriority="high"
               decoding="async"
             />
-          </div>
-          <div class="hero__photo hero__photo--small">
-            <img
-              src="/images/spaciofit/facial-care-closeup.png"
-              alt="Cuidado facial de cerca, imagen ilustrativa"
-              width="1122"
-              height="1402"
-              sizes="(max-width: 720px) 132px, 188px"
-              decoding="async"
-            />
+            </picture>
           </div>
           <div class="hero__badge hero__badge--one">FACIAL</div>
-          <div class="hero__badge hero__badge--two">CUERPO</div>
           <div class="hero__badge hero__badge--three">BIENESTAR</div>
-          <div class="hero__orbit" aria-hidden="true"></div>
         </div>
       </div>
 
@@ -137,74 +131,27 @@
             <p class="eyebrow">EMPEZÁ POR VOS</p>
             <h2>¿Qué querés mejorar?</h2>
           </div>
-          <p>No necesitás saber el nombre técnico de un tratamiento para empezar. Elegí lo que estás buscando y explorá las opciones disponibles.</p>
+          <p>Empezá por lo que querés cuidar. Acá podés ver las opciones disponibles y encontrar la que mejor encaje con vos.</p>
         </div>
 
         <div class="need-grid">
-          <a class="need-card need-card--large" href="#tratamientos" data-filter="facial" data-analytics="need_facial">
-            <img class="need-card__image" src="/images/spaciofit/facial-care-closeup.png" alt="Cuidado facial de cerca, imagen ilustrativa" width="1122" height="1402" sizes="(max-width: 720px) 82vw, 42vw" loading="lazy" decoding="async" />
-            <span class="need-card__scrim"></span>
-            <span class="need-card__number">01</span>
-            <div>
-              <span class="need-card__icon" aria-hidden="true">◌</span>
-              <h3>Cuidado facial</h3>
-              <p>Opciones para sumar cuidado y atención a tu rutina facial.</p>
-            </div>
-            <span class="need-card__arrow" aria-hidden="true">↘</span>
+          <a class="need-card need-card--large need-card--photo" href="#tratamientos" data-filter="facial" data-analytics="need_facial">
+            <picture><source srcset="/images/spaciofit/facial-care-closeup.webp" type="image/webp" /><img class="need-card__image" src="/images/spaciofit/facial-care-closeup.png" alt="Cuidado facial de cerca, imagen ilustrativa" width="1122" height="1402" sizes="(max-width: 720px) 82vw, 42vw" loading="lazy" decoding="async" /></picture>
+            <span class="need-card__scrim"></span><span class="need-card__number">01</span>
+            <div><h3>Cuidado facial</h3><p>Un momento dedicado al cuidado de tu piel.</p></div><span class="need-card__arrow" aria-hidden="true">↓</span>
           </a>
-
-          <a class="need-card" href="#tratamientos" data-filter="corporal" data-analytics="need_body">
-            <img class="need-card__image" src="/images/spaciofit/body-modeling-treatment.png" alt="Sesión de cuidado corporal, imagen ilustrativa" width="1122" height="1402" sizes="(max-width: 720px) 82vw, 25vw" loading="lazy" decoding="async" />
-            <span class="need-card__scrim"></span>
-            <span class="need-card__number">02</span>
-            <div>
-              <span class="need-card__icon" aria-hidden="true">〰</span>
-              <h3>Modelado corporal</h3>
-              <p>Tecnologías y técnicas de estética corporal en un mismo espacio.</p>
-            </div>
-            <span class="need-card__arrow" aria-hidden="true">↘</span>
+          <a class="need-card need-card--coral" href="#tratamientos" data-filter="corporal" data-analytics="need_body">
+            <span class="need-card__number">02</span><div><h3>Modelado corporal</h3><p>Distintas técnicas y tecnologías de estética corporal.</p></div><span class="need-card__arrow" aria-hidden="true">↓</span>
           </a>
-
-          <a class="need-card need-card--lime" href="#tratamientos" data-filter="depilacion" data-analytics="need_hair">
-            <img class="need-card__image" src="/images/spaciofit/laser-hair-removal.png" alt="Tratamiento de depilación, imagen ilustrativa" width="1122" height="1402" sizes="(max-width: 720px) 82vw, 33vw" loading="lazy" decoding="async" />
-            <span class="need-card__scrim"></span>
-            <span class="need-card__number">03</span>
-            <div>
-              <span class="need-card__icon" aria-hidden="true">✧</span>
-              <h3>Depilación</h3>
-              <p>Alternativas definitivas y tradicionales según lo que prefieras.</p>
-            </div>
-            <span class="need-card__arrow" aria-hidden="true">↘</span>
+          <a class="need-card need-card--lime need-card--photo" href="#tratamientos" data-filter="depilacion" data-analytics="need_hair">
+            <picture><source srcset="/images/spaciofit/laser-hair-removal.webp" type="image/webp" /><img class="need-card__image" src="/images/spaciofit/laser-hair-removal.png" alt="Tratamiento de depilación, imagen ilustrativa" width="1122" height="1402" sizes="(max-width: 720px) 82vw, 33vw" loading="lazy" decoding="async" /></picture>
+            <span class="need-card__scrim"></span><span class="need-card__number">03</span><div><h3>Depilación</h3><p>Definitiva o tradicional: elegí la opción que mejor encaje con vos.</p></div><span class="need-card__arrow" aria-hidden="true">↓</span>
           </a>
-
-          <a class="need-card need-card--photo" href="#tratamientos" data-filter="masajes" data-analytics="need_massage">
-            <img
-              src="/images/spaciofit/relaxation-massage.png"
-              alt="Masaje de relajación en un ambiente cálido, imagen ilustrativa"
-              width="1122"
-              height="1402"
-              sizes="(max-width: 720px) 82vw, 42vw"
-              loading="lazy"
-              decoding="async"
-            />
-            <span class="need-card__scrim"></span>
-            <span class="need-card__number">04</span>
-            <div>
-              <span class="need-card__icon" aria-hidden="true">≈</span>
-              <h3>Relajación y masajes</h3>
-              <p>Un momento para bajar revoluciones y dedicarte tiempo.</p>
-            </div>
-            <span class="need-card__arrow" aria-hidden="true">↘</span>
+          <a class="need-card need-card--ink" href="#tratamientos" data-filter="masajes" data-analytics="need_massage">
+            <span class="need-card__number">04</span><div><h3>Relajación y masajes</h3><p>Masajes y un rato para bajar un cambio.</p></div><span class="need-card__arrow" aria-hidden="true">↓</span>
           </a>
-
-          <a class="need-card" href="#tratamientos" data-filter="bienestar" data-analytics="need_wellness">
-            <span class="need-card__number">05</span>
-            <div>
-              <span class="need-card__icon" aria-hidden="true">✦</span>
-              <h3>Bienestar</h3>
-              <p>Encontrá una opción que acompañe el momento que estás buscando.</p>
-            </div>
-            <span class="need-card__arrow" aria-hidden="true">↘</span>
+          <a class="need-card need-card--ivory" href="#tratamientos" data-filter="bienestar" data-analytics="need_wellness">
+            <span class="need-card__number">05</span><div><h3>Bienestar</h3><p>Hacerte un espacio para vos también cuenta.</p></div><span class="need-card__arrow" aria-hidden="true">↓</span>
           </a>
         </div>
       </div>
@@ -218,20 +165,20 @@
         </div>
 
         <div class="service-list" role="list" aria-label="Servicios disponibles">
-          <button class="service-pill" type="button" data-service="facial">Limpieza facial <span>↗</span></button>
-          <button class="service-pill" type="button" data-service="depilacion">Depilación definitiva <span>↗</span></button>
-          <button class="service-pill" type="button" data-service="depilacion">Depilación tradicional <span>↗</span></button>
-          <button class="service-pill" type="button" data-service="corporal">Lipoláser <span>↗</span></button>
-          <button class="service-pill" type="button" data-service="corporal">Maderoterapia <span>↗</span></button>
-          <button class="service-pill" type="button" data-service="corporal">Ultracavitación <span>↗</span></button>
-          <button class="service-pill" type="button" data-service="corporal">Radiofrecuencia <span>↗</span></button>
-          <button class="service-pill" type="button" data-service="corporal">Electrodos <span>↗</span></button>
-          <button class="service-pill" type="button" data-service="masajes">Masajes <span>↗</span></button>
+          <button class="service-pill" type="button" data-service="facial">Limpieza facial</button>
+          <button class="service-pill" type="button" data-service="depilacion">Depilación definitiva</button>
+          <button class="service-pill" type="button" data-service="depilacion">Depilación tradicional</button>
+          <button class="service-pill" type="button" data-service="corporal">Lipoláser</button>
+          <button class="service-pill" type="button" data-service="corporal">Maderoterapia</button>
+          <button class="service-pill" type="button" data-service="corporal">Ultracavitación</button>
+          <button class="service-pill" type="button" data-service="corporal">Radiofrecuencia</button>
+          <button class="service-pill" type="button" data-service="corporal">Electrodos</button>
+          <button class="service-pill" type="button" data-service="masajes">Masajes</button>
         </div>
 
         <div class="treatments__visual-grid">
           <figure class="visual-card visual-card--portrait">
-            <img
+            <picture><source srcset="/images/spaciofit/body-modeling-treatment.webp" type="image/webp" /><img
               src="/images/spaciofit/body-modeling-treatment.png"
               alt="Tratamiento de modelado corporal, imagen ilustrativa"
               width="1122"
@@ -239,7 +186,7 @@
               sizes="(max-width: 720px) calc(100vw - 24px), 55vw"
               loading="lazy"
               decoding="async"
-            />
+            /></picture>
             <figcaption>
               <span>01</span>
               <p>Elegí según tu objetivo, tu tiempo y lo que te haga sentir bien.</p>
@@ -249,9 +196,9 @@
             <div class="statement-shape" aria-hidden="true"></div>
             <p class="eyebrow">SIN COMPLICARLO</p>
             <h3>Explorá.<br>Elegí.<br><em>Reservá.</em></h3>
-            <p>La web te ayuda a entender las opciones. La agenda de SpacioFit sigue funcionando en Agenxu.</p>
+            <p>Mirá las opciones, elegí la que estás buscando y después consultá los horarios disponibles.</p>
             <a class="text-link reserve-link" href="#" target="_blank" rel="noopener" data-analytics="reserve_services">
-              Ir a la agenda <span aria-hidden="true">↗</span>
+              Ver horarios <span aria-hidden="true">↗</span>
             </a>
           </div>
         </div>
@@ -263,33 +210,33 @@
         <div class="booking__heading">
           <p class="eyebrow eyebrow--light">TU TURNO, SIN VUELTAS</p>
           <h2>Elegí. Reservá. <em>Vení.</em></h2>
-          <p>Del interés a la reserva en pocos pasos, sin cambiar el sistema de agenda que SpacioFit ya utiliza.</p>
+          <p>Elegí qué querés hacer, mirá los horarios disponibles y dejá tu turno agendado online.</p>
         </div>
 
         <div class="steps" aria-label="Cómo reservar">
           <article class="step">
             <span class="step__num">01</span>
-            <div class="step__icon" aria-hidden="true">◎</div>
+            <div class="step__line" aria-hidden="true"></div>
             <h3>Elegí tu tratamiento</h3>
-            <p>Explorá las opciones según lo que querés cuidar o mejorar.</p>
+            <p>Recorré las opciones y elegí la que mejor encaje con lo que buscás.</p>
           </article>
           <article class="step">
             <span class="step__num">02</span>
-            <div class="step__icon" aria-hidden="true">◫</div>
+            <div class="step__line" aria-hidden="true"></div>
             <h3>Consultá disponibilidad</h3>
-            <p>Pasá a la agenda y revisá los horarios disponibles.</p>
+            <p>Mirá los días y horarios disponibles.</p>
           </article>
           <article class="step">
             <span class="step__num">03</span>
-            <div class="step__icon" aria-hidden="true">✓</div>
+            <div class="step__line" aria-hidden="true"></div>
             <h3>Reservá online</h3>
-            <p>Completá tu turno en el sistema externo de Agenxu.</p>
+            <p>Confirmá tu turno directamente desde la agenda online.</p>
           </article>
           <article class="step">
             <span class="step__num">04</span>
-            <div class="step__icon" aria-hidden="true">⌖</div>
-            <h3>Asistí a SpacioFit</h3>
-            <p>Te esperamos en Luis Alberto de Herrera 4131, Montevideo.</p>
+            <div class="step__line" aria-hidden="true"></div>
+            <h3>Vení a SpacioFit</h3>
+            <p>Te esperamos en Luis Alberto de Herrera 4131.</p>
           </article>
         </div>
 
@@ -297,7 +244,7 @@
           <div class="agenxu-card__copy">
             <span class="agenxu-card__tag">AGENDA ONLINE</span>
             <h3>Tu horario está del otro lado de este botón.</h3>
-            <p>La reserva se completa en Agenxu. Esta web funciona como capa comercial y no reemplaza la agenda actual de SpacioFit.</p>
+            <p>Consultá los horarios disponibles y reservá tu turno online.</p>
           </div>
           <a class="button button--light reserve-link"
              href="#"
@@ -314,7 +261,7 @@
     <section class="section together">
       <div class="shell together__grid">
         <div class="together__photo">
-          <img
+          <picture><source srcset="/images/spaciofit/wellness-interior.webp" type="image/webp" /><img
             src="/images/spaciofit/wellness-interior.png"
             alt="Interior sereno dedicado al bienestar, imagen ilustrativa"
             width="1448"
@@ -322,14 +269,14 @@
             sizes="(max-width: 980px) calc(100vw - 36px), 50vw"
             loading="lazy"
             decoding="async"
-          />
+          /></picture>
           <span class="together__photo-label">ESTÉTICA + BIENESTAR</span>
         </div>
 
         <div class="together__copy">
           <p class="eyebrow">TODO EN UN MISMO LUGAR</p>
           <h2>Distintas necesidades.<br><em>Un espacio que las reúne.</em></h2>
-          <p>SpacioFit reúne tratamientos y profesionales de distintas disciplinas para que puedas encontrar opciones de estética y bienestar sin recorrer media ciudad.</p>
+          <p>Distintas disciplinas y profesionales, con opciones de estética y bienestar en una misma dirección.</p>
 
           <div class="discipline-list">
             <span>Estética facial</span>
@@ -348,19 +295,19 @@
       </div>
     </section>
 
-    <section class="section reviews" id="resenas">
+    <section class="section reviews" id="resenas" data-reviews-section>
       <div class="shell">
         <div class="reviews__header">
           <div>
-            <p class="eyebrow">RESEÑAS DE GOOGLE</p>
-            <h2>Experiencias reales,<br><em>sin inventar una palabra.</em></h2>
+            <p class="eyebrow">RESEÑAS EN GOOGLE</p>
+            <h2>También podés ver qué dicen en Google.</h2>
           </div>
           <a class="text-link"
              href="https://www.google.com/maps/search/?api=1&query=Spaciofit%20Av.%20Luis%20Alberto%20de%20Herrera%204131%20Montevideo"
              target="_blank"
              rel="noopener"
              data-analytics="google_reviews">
-             Ver en Google <span aria-hidden="true">↗</span>
+             Ver reseñas en Google <span aria-hidden="true">↗</span>
           </a>
         </div>
 
@@ -373,13 +320,7 @@
             </div>
           </div>
 
-          <div class="review-module__notice">
-            <span class="review-module__icon" aria-hidden="true">G</span>
-            <div>
-              <strong>Módulo preparado para Google Reviews</strong>
-              <p>En producción se pueden cargar reseñas reales desde la fuente correspondiente. Esta demo no incluye testimonios escritos inventados.</p>
-            </div>
-          </div>
+          <a class="review-module__cta" href="https://www.google.com/maps/search/?api=1&amp;query=Spaciofit%20Av.%20Luis%20Alberto%20de%20Herrera%204131%20Montevideo" target="_blank" rel="noopener" data-analytics="google_reviews_card">Ver reseñas en Google <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
@@ -388,7 +329,7 @@
       <div class="shell location__grid">
         <div class="location__copy">
           <p class="eyebrow">SPACIOFIT · MONTEVIDEO</p>
-          <h2>Más cerca de tu<br><em>próximo momento.</em></h2>
+          <h2>Nos encontrás en Luis Alberto de Herrera.</h2>
 
           <address>
             <span>Av. Luis Alberto de Herrera 4131</span>
@@ -414,31 +355,17 @@
           </div>
         </div>
 
-        <a class="location__map"
-           href="https://www.google.com/maps/search/?api=1&query=Spaciofit%20Av.%20Luis%20Alberto%20de%20Herrera%204131%20Montevideo"
-           target="_blank"
-           rel="noopener"
-           aria-label="Abrir ubicación de SpacioFit en Google Maps"
-           data-analytics="maps_visual">
-          <div class="map-grid" aria-hidden="true"></div>
-          <div class="map-road map-road--one" aria-hidden="true"></div>
-          <div class="map-road map-road--two" aria-hidden="true"></div>
-          <div class="map-pin" aria-hidden="true">
-            <span>S</span>
-          </div>
-          <div class="map-card">
-            <small>SPACIOFIT</small>
-            <strong>Luis Alberto de Herrera 4131</strong>
-            <span>Montevideo</span>
-          </div>
-        </a>
+        <div class="location__map">
+          <iframe title="Mapa de SpacioFit en Montevideo" src="https://www.google.com/maps?q=Av.%20Luis%20Alberto%20de%20Herrera%204131%2C%20Montevideo%2C%20Uruguay&amp;output=embed" width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <a class="location__map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Spaciofit%20Av.%20Luis%20Alberto%20de%20Herrera%204131%20Montevideo" target="_blank" rel="noopener" data-analytics="maps_visual">Abrir en Google Maps <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
     </section>
 
     <section class="final-cta">
       <div class="shell final-cta__inner">
         <div class="final-cta__photo" aria-hidden="true">
-          <img src="/images/spaciofit/relaxation-massage.png" alt="" width="1122" height="1402" sizes="370px" loading="lazy" decoding="async" />
+          <picture><source srcset="/images/spaciofit/relaxation-massage.webp" type="image/webp" /><img src="/images/spaciofit/relaxation-massage.png" alt="" width="1122" height="1402" sizes="370px" loading="lazy" decoding="async" /></picture>
         </div>
         <div class="final-cta__orb" aria-hidden="true"></div>
         <p class="eyebrow">CUANDO QUIERAS</p>
@@ -487,7 +414,7 @@
         <a href="https://www.instagram.com/spaciofit.uy/" target="_blank" rel="noopener">Instagram ↗</a>
       </div>
 
-      <p class="footer__small">Demo comercial privada. Imágenes ilustrativas utilizadas para esta demo; no representan clientes, profesionales ni instalaciones reales de SpacioFit.</p>
+      <p class="footer__small">Propuesta visual demo · Imágenes de ambientación ilustrativas.</p>
     </div>
   </footer>
 
@@ -497,7 +424,7 @@
      rel="noopener"
      aria-label="Consultar por WhatsApp"
      data-analytics="whatsapp_floating">
-    <span aria-hidden="true">⌁</span>
+    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.5 2.8 2 4.3 4.8 5"/></svg>
     <span>WhatsApp</span>
   </a>
 
