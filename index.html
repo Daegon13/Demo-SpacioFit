@@ -17,7 +17,7 @@
   <meta property="og:description" content="Elegí tu tratamiento, consultá disponibilidad y reservá online." />
   <meta property="og:type" content="website" />
 
-  <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+  <link rel="preload" as="image" href="/images/spaciofit/hero-facial-treatment.png" fetchpriority="high" />
   <link rel="stylesheet" href="./styles.css" />
   <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
 </head>
@@ -96,20 +96,22 @@
         <div class="hero__visual reveal reveal--delay-2" aria-label="Ambiente de bienestar, imagen ilustrativa">
           <div class="hero__photo hero__photo--main">
             <img
-              src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1400&q=82"
-              alt="Escena de bienestar y masaje, imagen ilustrativa"
-              width="1000"
-              height="1300"
+              src="/images/spaciofit/hero-facial-treatment.png"
+              alt="Tratamiento facial en un espacio de bienestar, imagen ilustrativa"
+              width="1122"
+              height="1402"
+              sizes="(max-width: 980px) calc(100vw - 52px), 48vw"
               fetchpriority="high"
               decoding="async"
             />
           </div>
           <div class="hero__photo hero__photo--small">
             <img
-              src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=700&q=80"
-              alt="Sala de tratamiento de estética, imagen ilustrativa"
-              width="600"
-              height="720"
+              src="/images/spaciofit/facial-care-closeup.png"
+              alt="Cuidado facial de cerca, imagen ilustrativa"
+              width="1122"
+              height="1402"
+              sizes="(max-width: 720px) 132px, 188px"
               decoding="async"
             />
           </div>
@@ -140,6 +142,8 @@
 
         <div class="need-grid">
           <a class="need-card need-card--large" href="#tratamientos" data-filter="facial" data-analytics="need_facial">
+            <img class="need-card__image" src="/images/spaciofit/facial-care-closeup.png" alt="Cuidado facial de cerca, imagen ilustrativa" width="1122" height="1402" sizes="(max-width: 720px) 82vw, 42vw" loading="lazy" decoding="async" />
+            <span class="need-card__scrim"></span>
             <span class="need-card__number">01</span>
             <div>
               <span class="need-card__icon" aria-hidden="true">◌</span>
@@ -150,6 +154,8 @@
           </a>
 
           <a class="need-card" href="#tratamientos" data-filter="corporal" data-analytics="need_body">
+            <img class="need-card__image" src="/images/spaciofit/body-modeling-treatment.png" alt="Sesión de cuidado corporal, imagen ilustrativa" width="1122" height="1402" sizes="(max-width: 720px) 82vw, 25vw" loading="lazy" decoding="async" />
+            <span class="need-card__scrim"></span>
             <span class="need-card__number">02</span>
             <div>
               <span class="need-card__icon" aria-hidden="true">〰</span>
@@ -160,6 +166,8 @@
           </a>
 
           <a class="need-card need-card--lime" href="#tratamientos" data-filter="depilacion" data-analytics="need_hair">
+            <img class="need-card__image" src="/images/spaciofit/laser-hair-removal.png" alt="Tratamiento de depilación, imagen ilustrativa" width="1122" height="1402" sizes="(max-width: 720px) 82vw, 33vw" loading="lazy" decoding="async" />
+            <span class="need-card__scrim"></span>
             <span class="need-card__number">03</span>
             <div>
               <span class="need-card__icon" aria-hidden="true">✧</span>
@@ -171,8 +179,11 @@
 
           <a class="need-card need-card--photo" href="#tratamientos" data-filter="masajes" data-analytics="need_massage">
             <img
-              src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=80"
-              alt=""
+              src="/images/spaciofit/relaxation-massage.png"
+              alt="Masaje de relajación en un ambiente cálido, imagen ilustrativa"
+              width="1122"
+              height="1402"
+              sizes="(max-width: 720px) 82vw, 42vw"
               loading="lazy"
               decoding="async"
             />
@@ -221,8 +232,11 @@
         <div class="treatments__visual-grid">
           <figure class="visual-card visual-card--portrait">
             <img
-              src="https://images.unsplash.com/photo-1540555700478-4be289fbec6d?auto=format&fit=crop&w=1100&q=82"
-              alt="Elementos de tratamiento y bienestar, imagen ilustrativa"
+              src="/images/spaciofit/body-modeling-treatment.png"
+              alt="Tratamiento de modelado corporal, imagen ilustrativa"
+              width="1122"
+              height="1402"
+              sizes="(max-width: 720px) calc(100vw - 24px), 55vw"
               loading="lazy"
               decoding="async"
             />
@@ -301,12 +315,15 @@
       <div class="shell together__grid">
         <div class="together__photo">
           <img
-            src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=1200&q=82"
-            alt="Espacio de tratamiento moderno, imagen ilustrativa"
+            src="/images/spaciofit/wellness-interior.png"
+            alt="Interior sereno dedicado al bienestar, imagen ilustrativa"
+            width="1448"
+            height="1086"
+            sizes="(max-width: 980px) calc(100vw - 36px), 50vw"
             loading="lazy"
             decoding="async"
           />
-          <span class="together__photo-label">IMAGEN ILUSTRATIVA</span>
+          <span class="together__photo-label">ESTÉTICA + BIENESTAR</span>
         </div>
 
         <div class="together__copy">
@@ -401,7 +418,8 @@
            href="https://www.google.com/maps/search/?api=1&query=Spaciofit%20Av.%20Luis%20Alberto%20de%20Herrera%204131%20Montevideo"
            target="_blank"
            rel="noopener"
-           aria-label="Abrir ubicación de SpacioFit en Google Maps">
+           aria-label="Abrir ubicación de SpacioFit en Google Maps"
+           data-analytics="maps_visual">
           <div class="map-grid" aria-hidden="true"></div>
           <div class="map-road map-road--one" aria-hidden="true"></div>
           <div class="map-road map-road--two" aria-hidden="true"></div>
@@ -419,6 +437,9 @@
 
     <section class="final-cta">
       <div class="shell final-cta__inner">
+        <div class="final-cta__photo" aria-hidden="true">
+          <img src="/images/spaciofit/relaxation-massage.png" alt="" width="1122" height="1402" sizes="370px" loading="lazy" decoding="async" />
+        </div>
         <div class="final-cta__orb" aria-hidden="true"></div>
         <p class="eyebrow">CUANDO QUIERAS</p>
         <h2>Tu próximo turno está<br><em>a unos segundos.</em></h2>
@@ -466,7 +487,7 @@
         <a href="https://www.instagram.com/spaciofit.uy/" target="_blank" rel="noopener">Instagram ↗</a>
       </div>
 
-      <p class="footer__small">Demo comercial privada. Fotografías de ambientación ilustrativas; no representan clientes de SpacioFit.</p>
+      <p class="footer__small">Demo comercial privada. Imágenes ilustrativas utilizadas para esta demo; no representan clientes, profesionales ni instalaciones reales de SpacioFit.</p>
     </div>
   </footer>
 

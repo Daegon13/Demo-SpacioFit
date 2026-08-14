@@ -23,5 +23,11 @@
     }
   ],
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/images/spaciofit/:path*",
+      "destination": "/public/images/spaciofit/:path*"
+    }
+  ]
 }
