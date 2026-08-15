@@ -1,68 +1,74 @@
 {
   "baseDirectory": "images/spaciofit/",
-  "codexExpectedFormat": "PNG",
-  "note": "Proyecto HTML estático sin framework: los assets viven directamente en images/spaciofit/ para que las URLs /images/spaciofit/... funcionen tanto localmente como en Vercel sin symlinks ni rewrites.",
-  "globalDisclosure": "Imágenes ilustrativas utilizadas para esta demo.",
+  "publicUrlBase": "/images/spaciofit/",
+  "format": "webp",
+  "globalDisclosure": "Propuesta visual demo · Imágenes de ambientación ilustrativas.",
   "assets": [
     {
-      "role": "Hero principal",
-      "png": "/images/spaciofit/hero-facial-treatment.png",
-      "webp": "/images/spaciofit/hero-facial-treatment.webp",
+      "role": "Cuidado facial",
+      "file": "needs-facial-treatment.webp",
+      "repoPath": "images/spaciofit/needs-facial-treatment.webp",
+      "publicUrl": "/images/spaciofit/needs-facial-treatment.webp",
       "alt": "Tratamiento facial en un espacio de bienestar, imagen ilustrativa.",
-      "loading": "eager / high priority",
-      "objectPosition": "center center",
-      "width": 1122,
-      "height": 1402
-    },
-    {
-      "role": "Cuidado facial / imagen secundaria del hero",
-      "png": "/images/spaciofit/facial-care-closeup.png",
-      "webp": "/images/spaciofit/facial-care-closeup.webp",
-      "alt": "Detalle de un tratamiento de cuidado facial, imagen ilustrativa.",
-      "loading": "lazy salvo si aparece dentro del hero",
-      "objectPosition": "center center",
-      "width": 1122,
-      "height": 1402
+      "width": 900,
+      "height": 1125,
+      "loading": "lazy",
+      "decoding": "async"
     },
     {
       "role": "Modelado corporal",
-      "png": "/images/spaciofit/body-modeling-treatment.png",
-      "webp": "/images/spaciofit/body-modeling-treatment.webp",
-      "alt": "Tratamiento estético corporal con equipo de aplicación manual, imagen ilustrativa.",
+      "file": "needs-body-modeling.webp",
+      "repoPath": "images/spaciofit/needs-body-modeling.webp",
+      "publicUrl": "/images/spaciofit/needs-body-modeling.webp",
+      "alt": "Tratamiento de estética corporal, imagen ilustrativa.",
+      "width": 900,
+      "height": 1125,
       "loading": "lazy",
-      "objectPosition": "center center",
-      "width": 1122,
-      "height": 1402
+      "decoding": "async"
     },
     {
-      "role": "Depilación definitiva",
-      "png": "/images/spaciofit/laser-hair-removal.png",
-      "webp": "/images/spaciofit/laser-hair-removal.webp",
-      "alt": "Sesión de depilación con tecnología de luz en un espacio de estética, imagen ilustrativa.",
+      "role": "Depilación",
+      "file": "needs-hair-removal.webp",
+      "repoPath": "images/spaciofit/needs-hair-removal.webp",
+      "publicUrl": "/images/spaciofit/needs-hair-removal.webp",
+      "alt": "Tratamiento de depilación con tecnología de luz, imagen ilustrativa.",
+      "width": 900,
+      "height": 1125,
       "loading": "lazy",
-      "objectPosition": "center center",
-      "width": 1122,
-      "height": 1402
+      "decoding": "async"
     },
     {
-      "role": "Relajación y masajes / CTA final",
-      "png": "/images/spaciofit/relaxation-massage.png",
-      "webp": "/images/spaciofit/relaxation-massage.webp",
-      "alt": "Masaje de relajación en un ambiente de bienestar, imagen ilustrativa.",
+      "role": "Relajación y masajes",
+      "file": "needs-relaxation-massage.webp",
+      "repoPath": "images/spaciofit/needs-relaxation-massage.webp",
+      "publicUrl": "/images/spaciofit/needs-relaxation-massage.webp",
+      "alt": "Masaje de relajación en un espacio de bienestar, imagen ilustrativa.",
+      "width": 900,
+      "height": 1125,
       "loading": "lazy",
-      "objectPosition": "center center",
-      "width": 1122,
-      "height": 1402
+      "decoding": "async"
     },
     {
-      "role": "Todo en un mismo lugar",
-      "png": "/images/spaciofit/wellness-interior.png",
-      "webp": "/images/spaciofit/wellness-interior.webp",
-      "alt": "Interior contemporáneo de estética y bienestar, imagen ambiental ilustrativa.",
+      "role": "Bienestar",
+      "file": "needs-wellness-space.webp",
+      "repoPath": "images/spaciofit/needs-wellness-space.webp",
+      "publicUrl": "/images/spaciofit/needs-wellness-space.webp",
+      "alt": "Espacio contemporáneo de bienestar, imagen ambiental ilustrativa.",
+      "width": 900,
+      "height": 1125,
       "loading": "lazy",
-      "objectPosition": "center center",
-      "width": 1448,
-      "height": 1086
+      "decoding": "async"
+    },
+    {
+      "role": "Elegí. Reservá. Vení.",
+      "file": "booking-arrival-wide.webp",
+      "repoPath": "images/spaciofit/booking-arrival-wide.webp",
+      "publicUrl": "/images/spaciofit/booking-arrival-wide.webp",
+      "alt": "Espacio de bienestar preparado para recibir una consulta, imagen ilustrativa.",
+      "width": 1400,
+      "height": 788,
+      "loading": "lazy",
+      "decoding": "async"
     }
   ]
 }

@@ -1,34 +1,33 @@
-# SpacioFit — Assets visuales
+# SpacioFit — Assets de secciones optimizados
 
-Este repositorio es HTML/CSS/JS estático, sin framework.
+Copiar el contenido del ZIP en la raíz del repositorio.
 
-Por eso los assets públicos viven directamente en:
+## Rutas exactas
 
 ```text
-images/
-└── spaciofit/
-    ├── hero-facial-treatment.png
-    ├── hero-facial-treatment.webp
-    ├── facial-care-closeup.png
-    ├── facial-care-closeup.webp
-    ├── body-modeling-treatment.png
-    ├── body-modeling-treatment.webp
-    ├── laser-hair-removal.png
-    ├── laser-hair-removal.webp
-    ├── relaxation-massage.png
-    ├── relaxation-massage.webp
-    ├── wellness-interior.png
-    └── wellness-interior.webp
+images/spaciofit/needs-facial-treatment.webp
+images/spaciofit/needs-body-modeling.webp
+images/spaciofit/needs-hair-removal.webp
+images/spaciofit/needs-relaxation-massage.webp
+images/spaciofit/needs-wellness-space.webp
+images/spaciofit/booking-arrival-wide.webp
 ```
 
-Las URLs usadas por `index.html` siguen siendo:
+URLs públicas:
 
-- `/images/spaciofit/hero-facial-treatment.webp`
-- `/images/spaciofit/facial-care-closeup.webp`
-- `/images/spaciofit/body-modeling-treatment.webp`
-- `/images/spaciofit/laser-hair-removal.webp`
-- `/images/spaciofit/relaxation-massage.webp`
-- `/images/spaciofit/wellness-interior.webp`
+- `/images/spaciofit/needs-facial-treatment.webp`
+- `/images/spaciofit/needs-body-modeling.webp`
+- `/images/spaciofit/needs-hair-removal.webp`
+- `/images/spaciofit/needs-relaxation-massage.webp`
+- `/images/spaciofit/needs-wellness-space.webp`
+- `/images/spaciofit/booking-arrival-wide.webp`
 
-No crear un symlink `images -> public/images`.
-No mover estos assets a `public/` salvo que el proyecto sea migrado a un framework que tenga esa convención.
+## Reglas de integración
+
+- Proyecto estático: NO crear `public/`.
+- NO usar symlinks.
+- NO añadir rewrites de Vercel.
+- Todas están debajo del fold: usar `loading="lazy"` y `decoding="async"`.
+- Mantener dimensiones explícitas.
+- Usar `object-fit: cover`.
+- Disclosure global: `Propuesta visual demo · Imágenes de ambientación ilustrativas.`
